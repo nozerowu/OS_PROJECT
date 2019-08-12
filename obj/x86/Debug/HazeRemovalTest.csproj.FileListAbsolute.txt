@@ -1,0 +1,8 @@
+C:\Users\mingj\Documents\linuxdocs\HazeRemovalTest\obj\x86\Debug\HazeRemovalTest.FrmTest.resources
+C:\Users\mingj\Documents\linuxdocs\HazeRemovalTest\obj\x86\Debug\HazeRemovalTest.Properties.Resources.resources
+C:\Users\mingj\Documents\linuxdocs\HazeRemovalTest\obj\x86\Debug\HazeRemovalTest.csproj.GenerateResource.cache
+C:\Users\mingj\Documents\linuxdocs\HazeRemovalTest\obj\x86\Debug\HazeRemovalTest.csproj.CoreCompileInputs.cache
+C:\Users\mingj\Documents\linuxdocs\HazeRemovalTest\bin\Debug\HazeRemovalTest.exe
+C:\Users\mingj\Documents\linuxdocs\HazeRemovalTest\bin\Debug\HazeRemovalTest.pdb
+C:\Users\mingj\Documents\linuxdocs\HazeRemovalTest\obj\x86\Debug\HazeRemovalTest.exe
+C:\Users\mingj\Documents\linuxdocs\HazeRemovalTest\obj\x86\Debug\HazeRemovalTest.pdb

@@ -13,8 +13,6 @@ namespace HazeRemovalTest
 {
     public unsafe partial class FrmTest : Form
     {
-        // dll的代码中用的是StdCall，这里也要用StdCall，如果用Cdecl，则会出现对 PInvoke 函数“....”的调用导致堆栈不对称错误，再次按F5又可以运行
-       
         [DllImport("HazeRemoval.dll", CallingConvention = CallingConvention.StdCall, CharSet = CharSet.Unicode, ExactSpelling = true)]
         private static extern void HazeRemovalUseDarkChannelPrior(byte* Src, byte* Dest, int Width, int Height, int Stride, int Radius,int GuideRadius, int MaxAtom, float Omega, float Epsilon, float T0);
 
@@ -28,8 +26,7 @@ namespace HazeRemovalTest
 
         private void CmdOpen_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.RestoreDirectory = true;
+            OpenFileDialog openFileDialog = new OpenFileDialog { RestoreDirectory = true };
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 PicSrc.Image.Dispose();

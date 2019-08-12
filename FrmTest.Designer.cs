@@ -2,15 +2,9 @@
 {
     unsafe partial class FrmTest
     {
-        /// <summary>
-        /// 必需的设计器变量。
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// 清理所有正在使用的资源。
-        /// </summary>
-        /// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+    
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,12 +14,7 @@
             base.Dispose(disposing);
         }
 
-        #region Windows 窗体设计器生成的代码
-
-        /// <summary>
-        /// 设计器支持所需的方法 - 不要
-        /// 使用代码编辑器修改此方法的内容。
-        /// </summary>
+        #region Windows 
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTest));
@@ -160,7 +149,7 @@
             this.CmdOpen.Name = "CmdOpen";
             this.CmdOpen.Size = new System.Drawing.Size(75, 29);
             this.CmdOpen.TabIndex = 21;
-            this.CmdOpen.Text = "打开图像";
+            this.CmdOpen.Text = "Open File";
             this.CmdOpen.UseVisualStyleBackColor = true;
             this.CmdOpen.Click += new System.EventHandler(this.CmdOpen_Click);
             // 
@@ -278,27 +267,27 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1179, 630);
-            this.Controls.Add(this.LblT0);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.T0);
-            this.Controls.Add(this.LblEpsilon);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.Epsilon);
-            this.Controls.Add(this.LblOmega);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.Omega);
+            //this.Controls.Add(this.LblT0);
+            //this.Controls.Add(this.label8);
+            //this.Controls.Add(this.T0);
+            //this.Controls.Add(this.LblEpsilon);
+            //this.Controls.Add(this.label6);
+            //this.Controls.Add(this.Epsilon);
+            //this.Controls.Add(this.LblOmega);
+            //this.Controls.Add(this.label5);
+            //this.Controls.Add(this.Omega);
             this.Controls.Add(this.PicDest);
             this.Controls.Add(this.PicSrc);
-            this.Controls.Add(this.LblGuideBlockSize);
-            this.Controls.Add(this.导向半径);
-            this.Controls.Add(this.GuideBlockSize);
-            this.Controls.Add(this.LbLAtom);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.MaxAtom);
-            this.Controls.Add(this.LblBlockSize);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.BlockSize);
-            this.Controls.Add(this.CmdHazeRemoval);
+            //this.Controls.Add(this.LblGuideBlockSize);
+            //this.Controls.Add(this.导向半径);
+            //this.Controls.Add(this.GuideBlockSize);
+            //this.Controls.Add(this.LbLAtom);
+            //this.Controls.Add(this.label3);
+            //this.Controls.Add(this.MaxAtom);
+            //this.Controls.Add(this.LblBlockSize);
+            //this.Controls.Add(this.label1);
+            //this.Controls.Add(this.BlockSize);
+            //this.Controls.Add(this.CmdHazeRemoval);
             this.Controls.Add(this.CmdOpen);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmTest";
