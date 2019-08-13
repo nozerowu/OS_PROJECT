@@ -43,7 +43,7 @@ Import all the courses into the Visual studio. Then run the build. You need to c
 ---
 
 ### Sample of the exe
-
+<img scr ="images/https://github.com/mingjue/OS_PROJECT/blob/master/img/haze_application.JPG" width="100" height="100">
 ---
 
 ### License Information
