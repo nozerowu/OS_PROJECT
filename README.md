@@ -11,7 +11,7 @@ The code can be executed via exe application
 ---
 
 
-## Summary from the article.
+## Summary .
 This dehaze algorithm contains three steps,
 
 1) Find the dark chanel
