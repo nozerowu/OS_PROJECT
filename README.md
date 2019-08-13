@@ -5,7 +5,7 @@ The propose of this repository is to implement the image haze removal base on th
 
 ## Usage
 
-The code can be executed via .exe
+The code can be executed via exe application
 
 
 ---
@@ -14,24 +14,23 @@ The code can be executed via .exe
 ## Summary from the article.
 This dehaze algorithm contains three steps,
 
-1) Determine intensity of atmospheric light
+1) Find the dark chanel
 2) Estimate transmission map
-3) Clarify image
+3) Determine intensity of atmospheric light
+4) Clarify image
 
 First, the intensity of atmospheric light `A` is estimated form hazed image `I(x)`. Then, the transmission map `t(x)` is estimated using `A` and `I(x)`. Finally, the image is clarified with the image defogging model.
 
-#### Step#1 Estimate intensity of atmospheric light:
-Find the top 0.1% brightest pixels in the dark channel then choose one with highest intensity as the representing of atmospheric light.
+#### Step#1 Find the dark chanel:
+Based on the input image, setup a block size. Then find the dark channel (lowest intensity).
 
 #### Step#2 Estimate transmission map:
-First, find a dark channel based on a local area(coarsemap)
-Then, the transmission map `t(x)` is thereby obtained:
+We need to create a transmission map. We will use the result of the dark channel to create the `t(x)`. Based on the article the function looks like following. ```t(x) = 1 – defog * darkchannel / AirLight```. Here the defog is a value between 0 to 1. This value would create the image depth.
 
-```t(x) = 1 – defoggingParam * darkPixelFromCoarseMap / AtmosphericLightIntensity```
+#### Step#3 Estimate intensity of atmospheric light:
+Find the top 0.1% brightest pixels in the dark channel then choose one with highest intensity as the representing of atmospheric light.
 
-The ```defoggingParam``` is a value between 0 to 1. The higher value the lesser amount of fog would be kept for the distant objects.
-
-#### Step#3 Clarify image:
+#### Step#4 Clarify image:
 Finally, the image is clarified by: ```J(x)=(I(x)- A)/max(t(x), t0)+A```
 
 Where `J(x)` is output, `I(x)` is input, `t(x)` is transmission map, `A` is atmospheric light and `t0` is set to a constant value to avoid dividing by zero.
