@@ -28,7 +28,7 @@ Based on the input image, setup a block size. Then find the dark channel (lowest
 We need to create a transmission map. We will use the result of the dark channel to create the `t(x)`. Based on the article the function looks like following. ```t(x) = 1 – defog * darkchannel / AirLight```. Here the defog is a value between 0 to 1. This value would create the image depth.
 
 #### Step#3 Estimate intensity of atmospheric light:
-Find the top 0.1% brightest pixels in the dark channel then choose one with highest intensity as the representing of atmospheric light.
+In order to find the intensity of atmospheric light, we pick the 0.1% haze pixels in the dark chnnel, then we compare with the original image then we pick the highest intensity value as the atmospheric light.
 
 #### Step#4 Clarify image:
 Finally, the image is clarified by: ```J(x)=(I(x)- A)/max(t(x), t0)+A```
@@ -38,7 +38,7 @@ Where `J(x)` is output, `I(x)` is input, `t(x)` is transmission map, `A` is atmo
 ---
 
 ### You need to have the Visual Studio to build the exe:
-After you have the exe you can run it like the normal Microsoft Applications
+Import all the courses into the Visual studio. Then run the build. You need to change the build to use the release instead of the debug mode. After you have the exe you can run it like the normal Microsoft Applications
 
 ---
 
