@@ -40,6 +40,10 @@ Where `J(x)` is output, `I(x)` is input, `t(x)` is transmission map, `A` is atmo
 ### You need to have the Visual Studio to build the exe:
 Import all the courses into the Visual studio. Then run the build. You need to change the build to use the release instead of the debug mode. After you have the exe you can run it like the normal Microsoft Applications
 
+Steps to build the release at visual studio
+
+https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-set-debug-and-release-configurations?view=vs-2019
+
 ---
 
 ### Sample of the exe
