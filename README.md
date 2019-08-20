@@ -38,7 +38,7 @@ Where `J(x)` is output, `I(x)` is input, `t(x)` is transmission map, `A` is atmo
 ---
 
 ### You need to have the Visual Studio to build the exe:
-
+The exe is under the bin floder. You can run it directly.
 #### Checkout and download insns
 You can either checkout from github or download it directly of the source code
 
