@@ -2,6 +2,7 @@
 ### Mingjue Wang
 
 The propose of this repository is to implement the image haze removal base on the Kaiming HE. [paper](http://projectsweb.cs.washington.edu/research/insects/CVPR2009/award/hazeremv_drkchnl.pdf).
+Get code from http://www.voidcn.com/article/p-eydeokrq-nw.html
 
 ## Usage
 
